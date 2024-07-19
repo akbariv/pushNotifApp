@@ -14,6 +14,7 @@ import {
   View,
   TouchableOpacity,
   Alert,
+  ScrollView,
 } from 'react-native';
 import NotifService from './NotifService';
 
@@ -37,6 +38,7 @@ const  App = () => {
 
     return (
       <View style={styles.container}>
+        <ScrollView>
         <Text style={styles.title}>
           Example app react-native-push-notification
         </Text>
@@ -145,6 +147,7 @@ const  App = () => {
         {fcmRegistered && <Text>FCM Configured !</Text>}
 
         <View style={styles.spacer}></View>
+        </ScrollView>
       </View>
     );
 }
